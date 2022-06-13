@@ -66,7 +66,7 @@
   justify-content: center;
   box-sizing: border-box;
   padding: 0px 0px 0px 64px; /* отступ слева */
-  margin: 0px;
+  margin: 0;
   background-color: #f2f2f2;
   height: 100vh; /*Весь экран, если мы в пределах следующих значений: */
   min-height: 600px;
@@ -75,8 +75,8 @@
 
 .header__title {
   align-self: flex-start;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -85,8 +85,8 @@
 }
 
 .header__subtitle{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -106,8 +106,8 @@
   width: 765px;
   height: 608px;
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   z-index: 1;
 }
 
@@ -117,7 +117,7 @@
   background-color: #2f80ed;
   position: absolute;
   top: 64px;
-  right: 0px;
+  right: 0;
   z-index: 0;
 }
 
@@ -140,8 +140,8 @@
 .two-columns__brief {
  width: 175px;
  min-width: 175px;  /* Если не использовать min-width то столбец всё-таки сожмётся на маленьких экранах. Интересно. */
- margin: 0px;
- padding: 0px;
+ margin: 0;
+ padding: 0;
  line-height: 1.2;
  font-size: 18px;
  font-weight: normal;
@@ -157,12 +157,12 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  padding: 0px;
+  padding: 0;
   margin: 0px 0px 30px 0px; /*внутренний отступ снизу*/
 }
 
 /*псевдокласс. У последнего параграфа, не должно быть отступа*/
-.two-columns__paragraph:last-of-type {margin-bottom: 0px;}
+.two-columns__paragraph:last-of-type {margin-bottom: 0;}
 
 /* Клас для выделения текста жирным */
 .two-columns__span-accent {font-weight: 700;}
@@ -180,8 +180,8 @@
 
 .section-title {
   text-align: center;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -197,16 +197,15 @@
 .kaufman .section-title {margin-bottom: 20px;}
 
 
-/* шрифты не меняются */
-/* А цвет текста Белый оптимальнее один раз задать всей секции, мне кажется*/
-/* Но в брифе потребовали каждому элементу сделать _theme_dark. Ну ладно.
-Разве что из-за треуголника на фоне перестраховываюсь с z-index: 1;*/
-.section-title_theme_dark {z-index: 1;}
+.section-title_theme_dark {
+  color: white;
+  z-index: 1;
+}
 
 .section-subtitle {
   text-align: center;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -214,15 +213,16 @@
 }
 
 /* шрифты не меняются */
-/* А цвет текста Белый оптимальнее один раз задать всей секции, мне кажется*/
-/* Но в брифе потребовали каждому элементу сделать _theme_dark. Ну ладно.*/
-.section-subtitle_theme_dark {z-index: 1;}
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 1;
+}
 
 .table {
   /* Убираем лишний style списка ul*/
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0p;
+  padding: 0;
 
   display: flex;
   flex-direction: row;
@@ -232,38 +232,35 @@
 }
 
 .table_theme_dark {
-  max-width: 1050px;
-  /* Не нравится мне это место, по сути ручками width подбирал, чтобы максимально отступы между карточками на бриф похожи были */
+  color: white;
   z-index: 1;
 }
 
 .table__cell {
   margin: 60px 0px 0px 0px;
-  padding: 0px;
+  padding: 0;
   width: 250px;
 }
 
-
-/* шрифты не меняются */
-/* А цвет текста Белый оптимальнее один раз задать всей секции, мне кажется*/
 .table__cell_theme_dark {
+  color: white;
   margin: 80px 0px 0px 0px;
   width: 200px;
   z-index: 1;
 }
 
 .table__heading {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
 
-/* шрифты не меняются */
-/* А цвет текста Белый оптимальнее один раз задать всей секции, мне кажется*/
-/* Но в брифе потребовали каждому элементу сделать _theme_dark. Ну ладно.*/
-.table__heading_theme_dark {z-index: 1;}
+.table__heading_theme_dark {
+  color: white;
+  z-index: 1;
+}
 
 .table__text {
   margin: 20px 0px 0px 0px;
@@ -273,27 +270,33 @@
   font-weight: normal;
 }
 
-/* шрифты не меняются */
-/* А цвет текста Белый оптимальнее один раз задать всей секции, мне кажется*/
-/* Но в брифе потребовали каждому элементу сделать _theme_dark. Ну ладно.*/
-.table__text_theme_dark {z-index: 1;}
+.table__text_theme_dark {
+  color: white;
+  z-index: 1;
+}
 
 
 /* Секция №3 с Феймоном */
 .feynman {
-  height: 890px;
+  /* Не стоит ограничивать максимальную высоту секции с текстовым контентом.
+  Контент часто изменяется, увеличение количества текста может сломать верстку.
+  В данном случае уместно будет использовать стиль min-height, таким образом мы
+  сможем решить нашу задачу, но при этом не ограничим максимальную высоту секции,
+  что позволит ей растягиваться. */
+  min-height: 890px;
+
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   background-color: #f2f2f2;
 }
 
 .feynman__title {
-  margin: 0px;
+  margin: 100px 0px 70px 0px;
   padding: 0px;
   text-align: center;
   width: 648px;
@@ -301,14 +304,6 @@
   font-size: 120px;
   font-weight: 700;
   z-index: 99;
-}
-
-.feynman__title_space_top {
-  margin-top: 100px;
-}
-
-.feynman__title_space_bottom {
-  margin-bottom: 70px;
 }
 
 .feynman__subtitle {
@@ -337,8 +332,8 @@
   width: 867px;
   height: 637px;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -353,7 +348,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #1f1f1f;
-  color: white;
 
   overflow: hidden; /* Чтобы треугольник не выходил за границу блока */
 }
@@ -362,7 +356,7 @@
   width: 877px;
   height: 877px;
   position: absolute;
-  top: 0px;
+  top: 0;
   right: -210px;
   /* в самой картинке треугольника слишком много пустого пространства
   поэтому вид немного отличается от брифа */
@@ -374,7 +368,6 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  color: white;
   background-color: #1f1f1f;
   min-height: 350px;
   position: relative;
@@ -397,7 +390,7 @@
 }
 
 .footer__column_content_copyright {
-  flex-basis: 50%;
+  flex-basis: 711px;
   justify-content: space-between;
   align-items: start;
 }
@@ -413,8 +406,9 @@
 
 
 .footer__column-heading {
-  margin: 0px;
-  padding: 0px;
+  color: white;
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
@@ -422,7 +416,7 @@
 
 .footer__column-links {
   margin: 20px 0px 16px 0px;
-  padding: 0px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   line-height: 30px;
@@ -433,8 +427,8 @@
 .footer__column-link{
   display: flex;
   align-items: center;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: white;
 }
@@ -458,7 +452,7 @@
   width: 16px;
   height: 16px;
   margin: 0px 10px 0px 0px;
-  padding: 0px;
+  padding: 0;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -466,8 +460,9 @@
 }
 
 .footer__author {
+  color: white;
   margin: 18px 0 18px 0;
-  padding: 0px;
+  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
