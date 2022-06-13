@@ -16,13 +16,23 @@
       Но на вебинаре, преподаватель делал в <img src="" alt="">,
       и в Слаке навставник намекнул что Лого это часть контента.
       Хотя мне нравилось подменять img в CSS больше-->
+
+      <!-- Вариант #1 Логотипа как в тренажере учили через background-img -->
       <!-- <div class="logo logo_place_header"></div> -->
-      <img class="logo logo_place_header" src="./images/logo/logo_place_header.svg" alt="Яндекс Практикум">
+
+      <!-- Вариант #2 логотипа с использованием <img src="" alt=""> -->
+      <!-- <img class="logo logo_place_header" src="./images/logo/logo_place_header.svg" alt="Яндекс Практикум"> -->
+
+      <!-- Вариант #3 логотипа с использованием href. Немного рекламы Яндексу. -->
+      <a href="https://practicum.yandex.ru/" class="logo logo_place_header"></a>
+
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
         <a href="#" class="header__link">Узнать &rarr;</a>
       </p>
-      <div class="header__main-illustration"></div>
+
+      <!-- Это изображение является контентным - оно дополняет информацию секции. Такое изображение нужно разметить тегом img -->
+      <img class="header__main-illustration" src="./images/header-image.png" alt="Картина Решетникова - Опять двойка. 1952 г.">
       <div class="header__square-pic"></div>
     </header>
 
@@ -30,65 +40,66 @@
     <main class="content">
 
       <section class="description">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
-          <ul class="two-columns__main-text list">
-            <li class="two-columns__paragraph">
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">
               Ни в школе, ни в институте нас не учат тому, как правильно изучать материал.
               Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи,
               чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка
               быстро выветривается и не приносит пользы.
-            </li>
-            <li class="two-columns__paragraph">
+            </p>
+            <p class="two-columns__paragraph">
               <span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
-            </li>
-            <li class="two-columns__paragraph two-columns__paragraph_no-bottom-margin">
+            </p>
+            <p class="two-columns__paragraph">
               Конкретные техники и упражнения помогают изменить подход к обучению,
               сделать его эффективным и захватывающим. Эти же техники применяются
               на примере обучения в Практикуме.
-            </li>
-          </ul>
-        </div>
+            </p>
+          </div>
+        </article>
       </section>
 
       <section class="digits">
         <h2 class="section-title section-title_space_bottom">Цифры и факты</h2>
-        <h3 class="section-subtitle">Про учёбу и мозг</h3>
 
-        <ul class="table list">
+        <p class="section-subtitle">Про учёбу и мозг</p>
+
+        <ul class="table">
 
           <li class="table__cell">
-            <h4 class="table__heading">86 миллиардов</h4>
+            <h3 class="table__heading">86 миллиардов</h3>
             <p class="table__text">Число нейронов в мозге человека</p>
           </li>
           <li class="table__cell">
-            <h4 class="table__heading">2,1 миллиарда</h4>
+            <h3 class="table__heading">2,1 миллиарда</h3>
             <p class="table__text">Число нуждающихся в повышении квалификации</p>
             <p class="table__text">Всемирный Банк, 2017</p>
           </li>
           <li class="table__cell">
-            <h4 class="table__heading">1000 терабайт</h4>
+            <h3 class="table__heading">1000 терабайт</h3>
             <p class="table__text">Объём памяти человека</p>
           </li>
           <li class="table__cell">
-            <h4 class="table__heading">500 триллионов</h4>
+            <h3 class="table__heading">500 триллионов</h3>
             <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
           </li>
           <li class="table__cell">
-            <h4 class="table__heading">420 миллионов</h4>
+            <h3 class="table__heading">420 миллионов</h3>
             <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
             <p class="table__text">Всемирный Банк, 2017</p>
           </li>
           <li class="table__cell">
-            <h4 class="table__heading">17–20 лет</h4>
+            <h3 class="table__heading">17–20 лет</h3>
             <p class="table__text">Пик обучаемости</p>
           </li>
           <li class="table__cell">
-            <h4 class="table__heading">1885 год</h4>
+            <h3 class="table__heading">1885 год</h3>
             <p class="table__text">Открытие кривой забывания</p>
           </li>
           <li class="table__cell">
-            <h4 class="table__heading">1889 год</h4>
+            <h3 class="table__heading">1889 год</h3>
             <p class="table__text">Открытие условного рефлекса</p>
           </li>
 
@@ -97,7 +108,9 @@
 
       <section class="feynman">
         <h2 class="feynman__title feynman__title_space_top feynman__title_space_bottom">Метод Фейнмана</h2>
-        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+
+        <!--был h3. Для разметки подзаголовка лучше использовать тег p, это больше похоже на реальную структуру страницы -->
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a href="#" class="feynman__link">Подробнее &rarr;</a>
         <!-- <div class="feynman__main-illustration" title="Ри́чард Фи́ллипс Фе́йнман"></div>
         до сих пор склоняюсь к мысли что это всётаки фоновоя картинка и реализовал это background-image
@@ -107,46 +120,48 @@
 
       <section class="kaufman">
         <h2 class="section-title section-title_space_bottom section-title_theme_dark">Принципы обучения</h2>
-        <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
-        <ul class="table table_theme_dark list">
+
+        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
+
+        <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">1</h4>
+            <h3 class="table__heading table__heading_theme_dark">1</h3>
             <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">2</h4>
+            <h3 class="table__heading table__heading_theme_dark">2</h3>
             <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">3</h4>
+            <h3 class="table__heading table__heading_theme_dark">3</h3>
             <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">4</h4>
+            <h3 class="table__heading table__heading_theme_dark">4</h3>
             <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">5</h4>
+            <h3 class="table__heading table__heading_theme_dark">5</h3>
             <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">6</h4>
+            <h3 class="table__heading table__heading_theme_dark">6</h3>
             <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">7</h4>
+            <h3 class="table__heading table__heading_theme_dark">7</h3>
             <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">8</h4>
+            <h3 class="table__heading table__heading_theme_dark">8</h3>
             <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">9</h4>
+            <h3 class="table__heading table__heading_theme_dark">9</h3>
             <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
           </li>
           <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">10</h4>
+            <h3 class="table__heading table__heading_theme_dark">10</h3>
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
@@ -156,52 +171,72 @@
 
 
     <footer class="footer">
-      <ul class="footer__columns list">
+      <div class="footer__columns">
         <!-- 1ая колонка -->
-        <li class="footer__column footer__column_content_copyright">
+        <div class="footer__column footer__column_content_copyright">
 
-          <!-- Вариант использования Логотипа как в тренажере учили через background-img
+          <!-- Вариант #1 логотипа как в тренажере учили через background-img
           <div class="logo logo_place_footer"></div> -->
 
+          <!-- Вариант #2 логотипа с использованием <img src="" alt=""> -->
+          <!-- <img class="logo" src="./images/logo/logo_place_footer.svg" alt="Яндекс Практикум"> -->
 
-          <!-- Вариант логотипа с использованием <img src="" alt=""> -->
-          <img class="logo" src="./images/logo/logo_place_footer.svg" alt="Яндекс Практикум">
+          <!-- Вариант #3 логотипа с использованием href. Немного рекламы Яндексу. -->
+          <a href="https://practicum.yandex.ru/" class="logo logo_place_footer"></a>
 
           <!-- Всё как в ТЗ, я скромный. Моё имя тут наверно ни к чему -->
-          <div class="footer__author">&REG; Виктор Абанькин</div>
-        </li>
+          <p class="footer__author">&REG; Виктор Абанькин</p>
+          </div>
 
         <!-- 2ая колонка -->
-        <li class="footer__column footer__column_content_info">
-          <p class="footer__column-heading">О Практикуме</p>
+        <div class="footer__column footer__column_content_info">
+          <!-- Всё еще не уверен на счёт правильного уровня. Хоть навигация и маленький блок
+          и у футера самого нет заголовка. Но навигация довольно важный блок. Просто в Футере их два:
+          "навигая по сайту" и "навигация по соц сетям".
+          Хотя руки чешутся сделать h3. Но нельзя же пропускать иерархию H1->H2->H3 -->
+          <h2 class="footer__column-heading">О Практикуме</h2>
           <nav class="footer__column-links">
             <a href="#" class="footer__column-link">Главная</a>
             <a href="#" class="footer__column-link">Концепция</a>
             <a href="#" class="footer__column-link">Наставники</a>
           </nav>
-        </li>
+        </div>
+
+
+        <!-- Я попробовал использовать списки ul внутри nav. В итоге пришлось скорее весь div в nav переименовать.
+        Показалась обёртка лишней так как приходится дополнять код в css убиранием базовых стилей списков.
+        И получается у нас появляются теги без класса (li например, как-то некомфортно от этого).
+        h2 тоже тогда помещается внутрь nav. Пока не уверен хорошая ли это практика. -->
+        <!--
+          <nav class="footer__column footer__column_content_info">
+          <h2 class="footer__column-heading">О Практикуме</h2>
+          <ul class="footer__column-links"></ulclass>>
+            <li><a href="#" class="footer__column-link">Главная</a></li>
+            <li><a href="#" class="footer__column-link">Концепция</a></li>
+            <li><a href="#" class="footer__column-link">Наставники</a></li>
+          </ul>
+        </nav> -->
+
+
 
         <!-- 3я колонка -->
-        <li class="footer__column footer__column_content_social">
-          <p class="footer__column-heading">Соцсети</p>
+        <div class="footer__column footer__column_content_social">
+          <h2 class="footer__column-heading">Соцсети</h2>
           <nav class="footer__column-links">
             <a href="https://www.facebook.com/" class="footer__column-link">
-              <!-- Не уверен что хорошая идея делать иконки <img src=""> так как если иконка не загрузится Текст из alt поедет криво-->
-              <img class="footer__social-icon" src="./images/logo_social/facebook_color_white.svg" alt="Фэйсбук">
-              Facebook
+              <!-- Не уверен что хорошая идея делать иконки <img src=""> так как если иконка не загрузится. То из-за текста в alt всё может поехать криво-->
+              <div class="footer__social-icon" title="Facebook"></div>Facebook
             </a>
             <a href="https://vk.com/" class="footer__column-link">
-              <img class="footer__social-icon" src="./images/logo_social/vk_color_white.svg" alt="ВК">
-              Вкотнатке
+              <div class="footer__social-icon" title="Вкотнатке"></div>Вкотнатке
             </a>
             <a href="https://www.instagram.com" class="footer__column-link">
-              <img class="footer__social-icon" src="./images/logo_social/instagram_color_white.svg" alt="Инстаграм">
-              Instagram
+              <div class="footer__social-icon" title="Instagram"></div>Instagram
             </a>
           </nav>
-        </li>
+        </div>
 
-      </ul>
+      </div>
     </footer>
   </div>
 </body>
