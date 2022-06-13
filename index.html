@@ -12,7 +12,12 @@
 
 
     <header class="header">
-      <div class="logo logo_place_header"></div>
+      <!-- В тренажере учили делать лого с помощью background-img в css
+      Но на вебинаре, преподаватель делал в <img src="" alt="">,
+      и в Слаке навставник намекнул что Лого это часть контента.
+      Хотя мне нравилось подменять img в CSS больше-->
+      <!-- <div class="logo logo_place_header"></div> -->
+      <img class="logo logo_place_header" src="./images/logo/logo_place_header.svg" alt="Яндекс Практикум">
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
         <a href="#" class="header__link">Узнать &rarr;</a>
@@ -94,7 +99,10 @@
         <h2 class="feynman__title feynman__title_space_top feynman__title_space_bottom">Метод Фейнмана</h2>
         <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
         <a href="#" class="feynman__link">Подробнее &rarr;</a>
-        <div class="feynman__main-illustration" title="Сам Фейман"></div>
+        <!-- <div class="feynman__main-illustration" title="Ри́чард Фи́ллипс Фе́йнман"></div>
+        до сих пор склоняюсь к мысли что это всётаки фоновоя картинка и реализовал это background-image
+        но в слаке намекнули, что лучше всё-таки img, как и с лого.-->
+        <img class="feynman__main-illustration" src="./images/feynman.png" alt="Ри́чард Фи́ллипс Фе́йнман">
       </section>
 
       <section class="kaufman">
@@ -151,8 +159,16 @@
       <ul class="footer__columns list">
         <!-- 1ая колонка -->
         <li class="footer__column footer__column_content_copyright">
-          <div class="logo logo_place_footer"></div>
-          <div class="footer__author">&REG; Виктор Абанькин</div> <!-- как в ТЗ, я скромный -->
+
+          <!-- Вариант использования Логотипа как в тренажере учили через background-img
+          <div class="logo logo_place_footer"></div> -->
+
+
+          <!-- Вариант логотипа с использованием <img src="" alt=""> -->
+          <img class="logo" src="./images/logo/logo_place_footer.svg" alt="Яндекс Практикум">
+
+          <!-- Всё как в ТЗ, я скромный. Моё имя тут наверно ни к чему -->
+          <div class="footer__author">&REG; Виктор Абанькин</div>
         </li>
 
         <!-- 2ая колонка -->
