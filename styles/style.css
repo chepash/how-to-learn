@@ -65,7 +65,7 @@
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  padding: 0px 0px 0px 64px; /* отступ слева */
+  padding: 0 0 0 64px; /* отступ слева */
   margin: 0;
   background-color: #f2f2f2;
   height: 100vh; /*Весь экран, если мы в пределах следующих значений: */
@@ -127,7 +127,7 @@
   flex-direction: row;
   justify-content: center;
   box-sizing: border-box;
-  padding: 100px 0px 0px 0px; /*внутренний отступ сверху*/
+  padding: 100px 0 0 0; /*внутренний отступ сверху*/
 }
 
 .two-columns {
@@ -158,7 +158,7 @@
   font-size: 24px;
   font-weight: normal;
   padding: 0;
-  margin: 0px 0px 30px 0px; /*внутренний отступ снизу*/
+  margin: 0 0 30px 0; /*внутренний отступ снизу*/
 }
 
 /*псевдокласс. У последнего параграфа, не должно быть отступа*/
@@ -172,7 +172,7 @@
 /* Секция №2 digits с карточками */
 .digits {
   box-sizing: border-box;
-  padding: 100px 0px 100px 0px; /*внутренний отступ сверху и снизу у секции*/
+  padding: 100px 0 100px 0; /*внутренний отступ сверху и снизу у секции*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,14 +237,14 @@
 }
 
 .table__cell {
-  margin: 60px 0px 0px 0px;
+  margin: 60px 0 0 0;
   padding: 0;
   width: 250px;
 }
 
 .table__cell_theme_dark {
   color: white;
-  margin: 80px 0px 0px 0px;
+  margin: 80px 0 0 0;
   width: 200px;
   z-index: 1;
 }
@@ -263,8 +263,8 @@
 }
 
 .table__text {
-  margin: 20px 0px 0px 0px;
-  padding: 0px;
+  margin: 20px 0 0 0p;
+  padding: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -296,8 +296,8 @@
 }
 
 .feynman__title {
-  margin: 100px 0px 70px 0px;
-  padding: 0px;
+  margin: 100px 0 70px 0;
+  padding: 0;
   text-align: center;
   width: 648px;
   line-height: 1.15;
@@ -307,8 +307,8 @@
 }
 
 .feynman__subtitle {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   line-height: 51px;
   font-size: 36px;
@@ -343,7 +343,7 @@
 .kaufman{
   position: relative;
   box-sizing: border-box;
-  padding: 90px 0px 90px 0px; /* внутренний отступ сверху и снизу у секции */
+  padding: 90px 0 90px 0; /* внутренний отступ сверху и снизу у секции */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -372,7 +372,7 @@
   min-height: 350px;
   position: relative;
   box-sizing: border-box;
-  padding: 60px 0px 40px 0px; /*внутренний отступ сверху и снизу у footer*/
+  padding: 60px 0 40px 0; /*внутренний отступ сверху и снизу у footer*/
 }
 
 .footer__columns {
@@ -415,7 +415,7 @@
 }
 
 .footer__column-links {
-  margin: 20px 0px 16px 0px;
+  margin: 20px 0 16px 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -437,8 +437,8 @@
 /* .footer__social-icon {
   width: 16px;
   height: 16px;
-  margin: 0px 10px 0px 0px;
-  padding: 0px;
+  margin: 0 10px 0 0;
+  padding: 0;
 } */
 
 /* Вариант #2 с использование background-img */
@@ -451,7 +451,7 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  margin: 0px 10px 0px 0px;
+  margin: 0 10px 0 0;
   padding: 0;
 
   background-repeat: no-repeat;
