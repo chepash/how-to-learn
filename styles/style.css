@@ -221,7 +221,7 @@
 .table {
   /* Убираем лишний style списка ul*/
   list-style: none;
-  margin: 0p;
+  margin: 0;
   padding: 0;
 
   display: flex;
