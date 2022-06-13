@@ -81,7 +81,7 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
-  z-index: 99;
+  z-index: 10;
 }
 
 .header__subtitle{
@@ -303,7 +303,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: 700;
-  z-index: 99;
+  z-index: 10;
 }
 
 .feynman__subtitle {
@@ -313,7 +313,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  z-index: 99;
+  z-index: 10;
 }
 
 .feynman__link {
