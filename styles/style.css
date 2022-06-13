@@ -1,7 +1,12 @@
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
+  /* поэтому выше установлена минимальная ширина страницы
+  Но я попытался добавить в пару мест:
+  flex-wrap
+  min-width: fit-content;
+  max-width: fit-content;
+  На всякий случай если попросят убрать эти 1100px*/
   max-width: 1600px;
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
@@ -134,6 +139,7 @@
 
 .two-columns__brief {
  width: 175px;
+ min-width: 175px;  /* Если не использовать min-width то столбец всё-таки сожмётся на маленьких экранах. Интересно. */
  margin: 0px;
  padding: 0px;
  line-height: 1.2;
@@ -184,7 +190,8 @@
 
 /* .section-title_space_bottom {margin-bottom: 20px;}
 По БЭМ в блоке не должно быть никаких особых margin. Поэтому попробовал псевдоэлемент.
-Попытался еще более оптимизирова :is (.digits, .kaufman) .section-title {margin-bottom: 20px;}
+Попытался еще более оптимизировать
+:is (.digits, .kaufman) .section-title {margin-bottom: 20px;}
 но не получилось*/
 .digits .section-title {margin-bottom: 20px;}
 .kaufman .section-title {margin-bottom: 20px;}
@@ -212,7 +219,7 @@
 .section-subtitle_theme_dark {z-index: 1;}
 
 .table {
-  /* Убираем лишний style списка */
+  /* Убираем лишний style списка ul*/
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -221,11 +228,12 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1100px;
+  max-width: 1100px;
 }
 
 .table_theme_dark {
-  width: 1050px;
+  max-width: 1050px;
+  /* Не нравится мне это место, по сути ручками width подбирал, чтобы максимально отступы между карточками на бриф похожи были */
   z-index: 1;
 }
 
@@ -380,6 +388,7 @@
   align-items: stretch;
   justify-content: space-between;
   width: 90%;
+  flex-wrap: wrap;
 }
 
 .footer__column {
@@ -393,10 +402,14 @@
   align-items: start;
 }
 
-/* Даже не знаю чем эти колонки такие особенные.
-Многие параметры оптимальней задавать на увроне родителей*/
-.footer__column_content_info{}
-.footer__column_content_social{}
+.footer__column_content_info{
+  min-width: fit-content;
+  max-width: fit-content;
+}
+.footer__column_content_social{
+  min-width: fit-content;
+  max-width: fit-content;
+}
 
 
 .footer__column-heading {
@@ -451,10 +464,6 @@
   background-position: center;
   background-size: contain;
 }
-
-
-
-
 
 .footer__author {
   margin: 18px 0 18px 0;
