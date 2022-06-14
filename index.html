@@ -62,12 +62,11 @@
       </section>
 
       <section class="digits">
-        <h2 class="section-title">Цифры и факты</h2>
-
+        <!-- используем МИКС digits__section-title для отступа снизу -->
+        <h2 class="section-title digits__section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учёбу и мозг</p>
 
         <ul class="table">
-
           <li class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
             <p class="table__text">Число нейронов в мозге человека</p>
@@ -109,15 +108,15 @@
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
 
-        <!--был h3. Для разметки подзаголовка лучше использовать тег p, это больше похоже на реальную структуру страницы -->
+        <!-- был h3.Но для разметки подзаголовка лучше использовать тег p, это больше похоже на реальную структуру страницы -->
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a href="#" class="feynman__link">Подробнее &rarr;</a>
         <img class="feynman__main-illustration" src="./images/feynman.png" alt="Ри́чард Фи́ллипс Фе́йнман">
       </section>
 
       <section class="kaufman">
-        <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
-
+        <!-- используем МИКС kaufman__section-title для отступа снизу -->
+        <h2 class="section-title kaufman__section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
 
         <ul class="table table_theme_dark">
@@ -222,13 +221,13 @@
           <nav class="footer__column-links">
             <a href="https://www.facebook.com/" class="footer__column-link">
               <!-- Не уверен что хорошая идея делать иконки <img src=""> так как если иконка не загрузится. То из-за текста в alt всё может поехать криво-->
-              <div class="footer__social-icon" title="Facebook"></div>Facebook
+              <img class="footer__social-icon" src="./images/logo_social/facebook_color_white.svg" alt="Фэйсбук">Facebook
             </a>
             <a href="https://vk.com/" class="footer__column-link">
-              <div class="footer__social-icon" title="Вкотнатке"></div>Вкотнатке
+              <img class="footer__social-icon" src="./images/logo_social/vk_color_white.svg" alt="ВК">Вкотнатке
             </a>
             <a href="https://www.instagram.com" class="footer__column-link">
-              <div class="footer__social-icon" title="Instagram"></div>Instagram
+              <img class="footer__social-icon" src="./images/logo_social/instagram_color_white.svg" alt="Инстаграм">Instagram
             </a>
           </nav>
         </div>
