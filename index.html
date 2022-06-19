@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="./styles/style.css">
   <title>Научиться учиться</title>
 </head>
+
 <body>
   <div class="page">
 
@@ -27,12 +29,14 @@
       <a href="https://practicum.yandex.ru/" class="logo logo_place_header"></a>
 
       <h1 class="header__title">Научиться учиться</h1>
-      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
+        жизни?
         <a href="#" class="header__link">Узнать &rarr;</a>
       </p>
 
       <!-- Это изображение является контентным - оно дополняет информацию секции. Такое изображение нужно разметить тегом img -->
-      <img class="header__main-illustration" src="./images/header-image.png" alt="Картина Решетникова - Опять двойка. 1952 г.">
+      <img class="header__main-illustration" src="./images/header-image.png"
+        alt="Картина Решетникова - Опять двойка. 1952 г.">
       <div class="header__square-pic"></div>
     </header>
 
@@ -50,7 +54,8 @@
               быстро выветривается и не приносит пользы.
             </p>
             <p class="two-columns__paragraph">
-              <span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
+              <span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где
+              учат. Что с этим делать?
             </p>
             <p class="two-columns__paragraph">
               Конкретные техники и упражнения помогают изменить подход к обучению,
@@ -154,7 +159,8 @@
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">9</h3>
-            <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
+            <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.
+            </p>
           </li>
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">10</h3>
@@ -182,58 +188,48 @@
 
           <!-- Всё как в ТЗ, я скромный. Моё имя тут наверно ни к чему -->
           <p class="footer__author">&REG; Виктор Абанькин</p>
-          </div>
-
-        <!-- 2ая колонка -->
-        <div class="footer__column footer__column_content_info">
-          <!-- Всё еще не уверен на счёт правильного уровня. Хоть навигация и маленький блок
-          и у футера самого нет заголовка. Но навигация довольно важный блок. Просто в Футере их два:
-          "навигая по сайту" и "навигация по соц сетям".
-          Хотя руки чешутся сделать h3. Но нельзя же пропускать иерархию H1->H2->H3 -->
-          <h2 class="footer__column-heading">О Практикуме</h2>
-          <nav class="footer__column-links">
-            <a href="#" class="footer__column-link">Главная</a>
-            <a href="#" class="footer__column-link">Концепция</a>
-            <a href="#" class="footer__column-link">Наставники</a>
-          </nav>
         </div>
 
-
+        <!-- 2ая колонка -->
         <!-- Я попробовал использовать списки ul внутри nav. В итоге пришлось скорее весь div в nav переименовать.
         Показалась обёртка лишней так как приходится дополнять код в css убиранием базовых стилей списков.
-        И получается у нас появляются теги без класса (li например, как-то некомфортно от этого).
-        h2 тоже тогда помещается внутрь nav. Пока не уверен хорошая ли это практика. -->
-        <!--
-          <nav class="footer__column footer__column_content_info">
+        И получается у нас появляются теги без класса (тег li например, как-то некомфортно от этого).
+        h3 тоже тогда помещается внутрь nav. Пока не уверен хорошая ли это практика. -->
+        <nav class="footer__column footer__column_content_info">
           <h2 class="footer__column-heading">О Практикуме</h2>
-          <ul class="footer__column-links"></ulclass>>
+          <ul class="footer__column-links">
             <li><a href="#" class="footer__column-link">Главная</a></li>
             <li><a href="#" class="footer__column-link">Концепция</a></li>
             <li><a href="#" class="footer__column-link">Наставники</a></li>
           </ul>
-        </nav> -->
-
-
+        </nav>
 
         <!-- 3я колонка -->
-        <div class="footer__column footer__column_content_social">
+        <nav class="footer__column footer__column_content_social">
           <h2 class="footer__column-heading">Соцсети</h2>
-          <nav class="footer__column-links">
-            <a href="https://www.facebook.com/" class="footer__column-link">
-              <!-- Не уверен что хорошая идея делать иконки <img src=""> так как если иконка не загрузится. То из-за текста в alt всё может поехать криво-->
-              <img class="footer__social-icon" src="./images/logo_social/facebook_color_white.svg" alt="Фэйсбук">Facebook
-            </a>
-            <a href="https://vk.com/" class="footer__column-link">
-              <img class="footer__social-icon" src="./images/logo_social/vk_color_white.svg" alt="ВК">Вкотнатке
-            </a>
-            <a href="https://www.instagram.com" class="footer__column-link">
-              <img class="footer__social-icon" src="./images/logo_social/instagram_color_white.svg" alt="Инстаграм">Instagram
-            </a>
-          </nav>
-        </div>
+          <ul class="footer__column-links">
+            <li>
+              <a href="https://www.facebook.com/" class="footer__column-link">
+                <!-- Не уверен что хорошая идея делать иконки <img src=""> так как если иконка не загрузится. То из-за текста в alt всё может поехать криво-->
+                <img class="footer__social-icon" src="./images/logo_social/facebook_color_white.svg" alt="Фэйсбук">Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://vk.com/" class="footer__column-link">
+                <img class="footer__social-icon" src="./images/logo_social/vk_color_white.svg" alt="ВК">Вкотнатке
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" class="footer__column-link">
+                <img class="footer__social-icon" src="./images/logo_social/instagram_color_white.svg" alt="Инстаграм">Instagram
+              </a>
+            </li>
+          </ul>
+        </nav>
 
       </div>
     </footer>
   </div>
 </body>
+
 </html>
