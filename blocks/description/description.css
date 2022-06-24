@@ -1,4 +1,3 @@
-/* Секция №1 description с колонками по сути самостоятельная статья article*/
 .description {
   display: flex;
   flex-direction: row;
