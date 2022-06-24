@@ -1,0 +1,11 @@
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  /* в самой картинке треугольника слишком много пустого пространства
+  поэтому вид немного отличается от брифа */
+  background-image: url(../../../images/kaufman-triangle.svg);
+  z-index: 0;
+}
