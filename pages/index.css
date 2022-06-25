@@ -2,6 +2,8 @@
 
 @import url(../blocks/page/page.css);
 
+@import url(../blocks/rotation/rotation.css); /*БЭМ блок анимации подключаем как МИКС всему что крутится на 360*/
+
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
@@ -16,7 +18,10 @@
 @import url(../blocks/logo/_place/logo_place_footer.css);
 
 
-/* Секция №1 description с колонками по сути самостоятельная статья article*/
+@import url(../blocks/content/content.css);
+
+
+/* Секция description с колонками по сути самостоятельная статья article*/
 @import url(../blocks/description/description.css);
 
 @import url(../blocks/two-columns/two-columns.css);
@@ -26,27 +31,18 @@
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 
 
-/* Секция №2 digits с карточками */
-@import url(../blocks/digits/digits.css);
+/* Секция techniques */
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/techniques/__section-title/techniques__section-title.css); /* Используем МИКС для отступа блока section-title в секции techniques*/
 
-@import url(../blocks/section-title/section-title.css);
-@import url(../blocks/section-title/_theme/section-title_theme_dark.css); /*Кауфман*/
-@import url(../blocks/digits/__section-title/digits__section-title.css); /* Используем МИКС для отступа блока section-title в секции digits*/
-
-@import url(../blocks/section-subtitle/section-subtitle.css);
-@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css); /*Кауфман*/
-
-@import url(../blocks/table/table.css);
-@import url(../blocks/table/_theme/table_theme_dark.css); /*Кауфман*/
-@import url(../blocks/table/__cell/table__cell.css);
-@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);/*Кауфман*/
-@import url(../blocks/table/__heading/table__heading.css);
-@import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);/*Кауфман*/
-@import url(../blocks/table/__text/table__text.css);
-@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);/*Кауфман*/
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/cards/__description/cards__description.css);
 
 
-/* Секция №3 с Феймоном */
+/* Секция feynman */
 @import url(../blocks/feynman/feynman.css);
 @import url(../blocks/feynman/__title/feynman__title.css);
 @import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
@@ -54,7 +50,27 @@
 @import url(../blocks/feynman/__link/feynman__link.css);
 
 
-/* Секция №4 с Кауфман */
+/* Секция digits с карточками */
+@import url(../blocks/digits/digits.css);
+
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-title/_theme/section-title_theme_dark.css); /*kaufman*/
+@import url(../blocks/digits/__section-title/digits__section-title.css); /* Используем МИКС для отступа блока section-title в секции digits*/
+
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css); /*kaufman*/
+
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/_theme/table_theme_dark.css); /*kaufman*/
+@import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);/*kaufman*/
+@import url(../blocks/table/__heading/table__heading.css);
+@import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);/*kaufman*/
+@import url(../blocks/table/__text/table__text.css);
+@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);/*kaufman*/
+
+
+/* Секция kaufman */
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__section-title/kaufman__section-title.css);/* Используем МИКС для отступа блока section-title в секции kaufman*/
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);

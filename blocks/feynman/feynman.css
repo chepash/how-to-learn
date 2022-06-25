@@ -5,7 +5,6 @@
   сможем решить нашу задачу, но при этом не ограничим максимальную высоту секции,
   что позволит ей растягиваться. */
   min-height: 890px;
-
   position: relative;
   display: flex;
   flex-direction: column;

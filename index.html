@@ -14,18 +14,13 @@
 
 
     <header class="header">
-      <!-- В тренажере учили делать лого с помощью background-img в css
-      Но на вебинаре, преподаватель делал в <img src="" alt="">,
-      и в Слаке навставник намекнул что Лого это часть контента.
-      Хотя мне нравилось подменять img в CSS больше-->
-
       <!-- Вариант #1 Логотипа как в тренажере учили через background-img -->
       <!-- <div class="logo logo_place_header"></div> -->
 
       <!-- Вариант #2 логотипа с использованием <img src="" alt=""> -->
       <!-- <img class="logo logo_place_header" src="./images/logo/logo_place_header.svg" alt="Яндекс Практикум"> -->
 
-      <!-- Вариант #3 логотипа с использованием href. Немного рекламы Яндексу. -->
+      <!-- Вариант #3(от ревьювера) логотипа с использованием href. Немного рекламы Яндексу. -->
       <a href="https://practicum.yandex.ru/" class="logo logo_place_header"></a>
 
       <h1 class="header__title">Научиться учиться</h1>
@@ -37,7 +32,7 @@
       <!-- Это изображение является контентным - оно дополняет информацию секции. Такое изображение нужно разметить тегом img -->
       <img class="header__main-illustration" src="./images/header-image.png"
         alt="Картина Решетникова - Опять двойка. 1952 г.">
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
 
 
@@ -64,6 +59,54 @@
             </p>
           </div>
         </article>
+      </section>
+
+      <section class="techniques">
+        <!-- используем МИКС techniques__section-title для отступа снизу -->
+
+        <h2 class="section-title techniques__section-title">Техники обучения</h2>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+        <!-- интересно ширина 60% у заголовков тут от чего берётся?
+          Если от края экрана, то тогда мне надо миксом ставить 75%.
+          А то тут секция необчная и сама ширину имеет 80% от блока content.
+          Если оставить без изменений то блоки заголовков берут 60% от 80%  -->
+
+        <ul class="cards">
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards/cards-attention.png" alt="Книга и руки">
+            <h3 class="cards__title">Два вида внимания</h3>
+            <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards/cards-recall.png" alt="Картинка сатуи">
+            <h3 class="cards__title">Recall</h3>
+            <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards/cards-interliving.png" alt="Много людей">
+            <h3 class="cards__title">Интерливинг</h3>
+            <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards/cards-question.png" alt="Пустой хол">
+            <h3 class="cards__title">Вопросы</h3>
+            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards/cards-competence.png" alt="Рука книги">
+            <h3 class="cards__title">Иллюзия компетентности</h3>
+            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="feynman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+
+        <!-- был h3.Но для разметки подзаголовка лучше использовать тег p, это больше похоже на реальную структуру страницы -->
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a href="#" class="feynman__link">Подробнее &rarr;</a>
+        <img class="feynman__main-illustration" src="./images/feynman.png" alt="Ри́чард Фи́ллипс Фе́йнман">
       </section>
 
       <section class="digits">
@@ -110,14 +153,7 @@
         </ul>
       </section>
 
-      <section class="feynman">
-        <h2 class="feynman__title">Метод Фейнмана</h2>
 
-        <!-- был h3.Но для разметки подзаголовка лучше использовать тег p, это больше похоже на реальную структуру страницы -->
-        <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a href="#" class="feynman__link">Подробнее &rarr;</a>
-        <img class="feynman__main-illustration" src="./images/feynman.png" alt="Ри́чард Фи́ллипс Фе́йнман">
-      </section>
 
       <section class="kaufman">
         <!-- используем МИКС kaufman__section-title для отступа снизу -->
@@ -167,7 +203,7 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
       </section>
     </main>
 
