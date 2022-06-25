@@ -62,14 +62,17 @@
       </section>
 
       <section class="techniques">
-        <!-- используем МИКС techniques__section-title для отступа снизу -->
 
+        <!-- используем МИКС techniques__section-title для отступа снизу -->
         <h2 class="section-title techniques__section-title">Техники обучения</h2>
+
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
         <!-- интересно ширина 60% у заголовков тут от чего берётся?
           Если от края экрана, то тогда мне надо миксом ставить 75%.
           А то тут секция необчная и сама ширину имеет 80% от блока content.
-          Если оставить без изменений то блоки заголовков берут 60% от 80%  -->
+          Если оставить без изменений то блоки заголовков берут 60% от 80%
+          75% от 80%экрана = 80% от 100%экрана
+        -->
 
         <ul class="cards">
           <li class="cards__item">
@@ -98,6 +101,36 @@
             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
           </li>
         </ul>
+      </section>
+
+      <section class="video">
+        <h2 class="section-title video__section-title">Видео нa TED</h2>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+
+        <div class="video__iframes">
+          <iframe
+          class="video__iframe"
+          width="515" height="316"
+          src="https://www.youtube.com/embed/5MgBikgcWnY"
+          title="The first 20 hours -- how to learn anything | Josh Kaufman | TEDxCSU"
+          frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+
+          <iframe class="video__iframe"
+            width="515" height="316"
+            src="https://www.youtube.com/embed/arj7oStGLkU"
+            title="Tim Urban: Inside the mind of a master procrastinator | TED"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+
+      <section class="oakley">
+
       </section>
 
       <section class="feynman">
