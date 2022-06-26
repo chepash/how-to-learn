@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
-  <link rel="stylesheet" href="./styles/style.css">
   <title>Научиться учиться</title>
 </head>
 
@@ -109,7 +108,6 @@
 
         <div class="video__iframes">
           <iframe class="video__iframe"
-          width="515" height="316"
           src="https://www.youtube.com/embed/5MgBikgcWnY"
           title="The first 20 hours -- how to learn anything | Josh Kaufman | TEDxCSU"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -117,7 +115,6 @@
           </iframe>
 
           <iframe class="video__iframe"
-            width="515" height="316"
             src="https://www.youtube.com/embed/arj7oStGLkU"
             title="Tim Urban: Inside the mind of a master procrastinator | TED"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -194,8 +191,10 @@
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          <!-- Специально для цитат, где много текста, можно использовать <blockquote> -->
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
+          <!-- Будет лучше использовать тег заголовка h3 для автора цитаты -->
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Обложка книги 'Весь мир — школа'">
@@ -259,20 +258,31 @@
         <h2 class="section-title resources__section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
 
-        <nav class="resources__logo-zone">
-          <a href="#" class="resources__link">
-            <img class="resources__logo" src="./images/logo_resources/resources-arzamas.svg" alt="Арзамас">
-          </a>
-          <a href="#" class="resources__link">
-            <img class="resources__logo" src="./images/logo_resources/resources-n1.svg" alt="Н+1">
-          </a>
-          <a href="#" class="resources__link">
-            <img class="resources__logo" src="./images/logo_resources/resources-strelka.svg" alt="Стрелка">
-          </a>
-          <a href="#" class="resources__link">
-            <img class="resources__logo" src="./images/logo_resources/resources-polka.svg" alt="Полка">
-          </a>
-        </nav>
+        <ul class="resources__logo-zone">
+          <li>
+            <a href="#" class="resources__link">
+              <img class="resources__logo" src="./images/logo_resources/resources-arzamas.svg" alt="Арзамас">
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="resources__link">
+              <img class="resources__logo" src="./images/logo_resources/resources-n1.svg" alt="Н+1">
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="resources__link">
+              <img class="resources__logo" src="./images/logo_resources/resources-strelka.svg" alt="Стрелка">
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="resources__link">
+              <img class="resources__logo" src="./images/logo_resources/resources-polka.svg" alt="Полка">
+            </a>
+          </li>
+        </ul>
       </section>
 
     </main>
@@ -293,7 +303,7 @@
           <a href="https://practicum.yandex.ru/" class="logo logo_place_footer"></a>
 
           <!-- Всё как в ТЗ, я скромный. Моё имя тут наверно ни к чему -->
-          <p class="footer__author">&REG; Виктор Абанькин</p>
+          <p class="footer__author">&copy; Виктор Абанькин</p>
         </div>
 
         <!-- 2ая колонка -->

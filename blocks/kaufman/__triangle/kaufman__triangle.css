@@ -8,4 +8,7 @@
   поэтому вид немного отличается от брифа */
   background-image: url(../../../images/kaufman-triangle.svg);
   z-index: 0;
+
+  /* Изображение теряет свои пропорции, вам поможет background-size: cover; */
+  background-size: cover;
 }

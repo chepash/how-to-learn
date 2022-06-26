@@ -1,4 +1,8 @@
 .khan__book-pic {
   width: 620px;
   height: 608px;
+
+  /* Чтобы картинка не сжалась и начиналась от верха, но при этом теряется нижняя часть обложки*/
+  object-fit: cover;
+  object-position: top;
 }

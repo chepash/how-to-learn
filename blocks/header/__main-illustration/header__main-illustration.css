@@ -5,4 +5,8 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+
+  /* Чтобы картинка не сжалась и начиналась от верха  */
+  object-fit: cover;
+  object-position: top;
 }
