@@ -120,3 +120,11 @@
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__author/footer__author.css);
+
+/* Будет крутым решением сделать иконку фоновым изображением, с помощью сложного модификатора на тег a
+Не совсем возможно понял про "сложный модификатор", но кажется тогда пропадает БЭМ лемент по брифу __social_icon*/
+/*
+@import url(../blocks/footer/__column-link/_icon/footer__column-link_icon_facebook.css);
+@import url(../blocks/footer/__column-link/_icon/footer__column-link_icon_vk.css);
+@import url(../blocks/footer/__column-link/_icon/footer__column-link_icon_instagram.css);
+*/
