@@ -1,0 +1,40 @@
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+
+  &__brief {
+    width: 175px;
+    min-width: 175px; /* Если не использовать min-width то столбец всё-таки сожмётся на маленьких экранах. Интересно. */
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #2f80ed;
+  }
+
+  &__main-text {
+    width: 80%;
+    min-width: 784px;
+  }
+
+  &__paragraph {
+    margin: 0 0 30px; /* внутренний отступ снизу */
+    padding: 0;
+
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__span-accent {
+    font-weight: 700;
+  }
+}

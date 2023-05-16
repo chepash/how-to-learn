@@ -1,0 +1,62 @@
+.table {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  max-width: 1100px;
+  margin: 0;
+  padding: 0;
+
+  /* Убираем лишний style списка ul */
+  list-style: none;
+
+  &__cell {
+    width: 250px;
+    margin: 60px 0 0;
+    padding: 0;
+
+    &_theme_dark {
+      /* kaufman */
+      z-index: 1;
+      width: 200px;
+      margin: 80px 0 0;
+      color: white;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.15;
+
+    &_theme_dark {
+      /* kaufman */
+      z-index: 1;
+      color: white;
+    }
+  }
+
+  &__text {
+    margin: 20px 0 0;
+    padding: 0;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+
+    &_theme_dark {
+      /* kaufman */
+      z-index: 1;
+      color: white;
+    }
+  }
+
+  &_theme_dark {
+    /* kaufman */
+    z-index: 1;
+    color: white;
+  }
+}

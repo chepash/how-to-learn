@@ -1,0 +1,21 @@
+.logo {
+  z-index: 100;
+  width: 228px;
+  height: 32px;
+
+  &_place {
+    &_header {
+      position: absolute;
+      top: 30px;
+      left: 64px;
+
+      background-image: url("./assets/logo/logo_place_header.svg");
+      background-repeat: no-repeat;
+    }
+
+    &_footer {
+      background-image: url("./assets/logo/logo_place_footer.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

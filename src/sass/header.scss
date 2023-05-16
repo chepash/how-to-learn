@@ -1,0 +1,82 @@
+.header {
+  position: relative;
+
+  overflow: hidden; /* Чтобы крутящийся квадрат не выходил за границу блока */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-sizing: border-box;
+  height: 100vh; /* Весь экран, если мы в пределах следующих значений: */
+  min-height: 600px;
+  max-height: 756px;
+  margin: 0;
+  padding: 0 0 0 64px; /* отступ слева */
+
+  background-color: #f2f2f2;
+
+  &__title {
+    z-index: 10;
+
+    align-self: flex-start;
+
+    width: 730px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 102px;
+    font-weight: 700;
+    line-height: 96px;
+  }
+
+  &__subtitle {
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+
+    width: 388px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 25px;
+  }
+
+  &__square-pic {
+    position: absolute;
+    z-index: 0;
+    top: 64px;
+    right: 0;
+
+    width: 568px;
+    height: 568px;
+
+    background-color: #2f80ed;
+  }
+
+  &__main-illustration {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+
+    width: 765px;
+    height: 608px;
+
+    /* Чтобы картинка не сжалась и начиналась от верха  */
+    object-fit: cover;
+    object-position: top;
+  }
+
+  &__link {
+    z-index: 2;
+    color: #2f80ed;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.5;
+      transition: opacity 0.2s ease;
+    }
+  }
+}

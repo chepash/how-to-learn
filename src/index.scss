@@ -1,0 +1,48 @@
+@import "./vendor/normalize.css";
+
+@import "./sass/page";
+
+@import "./sass/animation/rotation"; /* БЭМ блок анимации подключаем как МИКС всему что крутится на 360 */
+
+@import "./sass/header";
+
+@import "./sass/logo";
+
+@import "./sass/content";
+
+/* Заголовки в разных секциях */
+@import "./sass/section-title";
+@import "./sass/section-subtitle";
+
+/* Секция description с колонками по сути самостоятельная статья article */
+@import "./sass/description";
+@import "./sass/two-columns";
+
+/* Секция techniques */
+@import "./sass/techniques";
+
+@import "./sass/cards";
+
+@import "./sass/video";
+
+/* Секция oakley */
+@import "./sass/oakley";
+
+/* Секция feynman */
+@import "./sass/feynman";
+
+/* Секция digits с карточками */
+@import "./sass/digits";
+
+@import "./sass/table";
+
+/* Секция khan */
+@import "./sass/khan";
+
+/* Секция kaufman */
+@import "./sass/kaufman";
+
+/* Секция resources */
+@import "./sass/resources";
+
+@import "./sass/footer";
