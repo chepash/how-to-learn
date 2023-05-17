@@ -7,11 +7,9 @@
   justify-content: center;
 
   box-sizing: border-box;
-  height: 100vh; /* Весь экран, если мы в пределах следующих значений: */
-  min-height: 600px;
-  max-height: 756px;
+  height: 50vh; /* Весь экран, если мы в пределах следующих значений: */
   margin: 0;
-  padding: 0 0 0 64px; /* отступ слева */
+  padding: 0 0 0 64px;
 
   background-color: #f2f2f2;
 
@@ -20,13 +18,20 @@
 
     align-self: flex-start;
 
-    width: 730px;
+    width: 90%; /* Adjust the width for smaller screens */
+    max-width: 730px; /* Set a maximum width */
     margin: 0;
     padding: 0;
 
-    font-size: 102px;
+    font-size: 6vw; /* Adjust the font size based on viewport width */
     font-weight: 700;
-    line-height: 96px;
+    line-height: 1.2;
+
+    @media screen and (width >= 1100px) {
+      width: 730px; /* Reset the width for larger screens */
+      font-size: 102px; /* Reset the font size for larger screens */
+      line-height: 96px; /* Reset the line height for larger screens */
+    }
   }
 
   &__subtitle {
@@ -49,10 +54,15 @@
     top: 64px;
     right: 0;
 
-    width: 568px;
-    height: 568px;
+    width: 40%; /* Adjust the width for smaller screens */
+    height: 50%; /* Allow the height to adjust proportionally */
 
     background-color: #2f80ed;
+
+    @media screen and (width >= 1100px) {
+      width: 568px; /* Reset the width for larger screens */
+      height: 568px; /* Reset the height for larger screens */
+    }
   }
 
   &__main-illustration {
@@ -61,12 +71,17 @@
     right: 0;
     bottom: 0;
 
-    width: 765px;
-    height: 608px;
+    width: 60%; /* Adjust the width for smaller screens */
+    height: auto; /* Allow the height to adjust proportionally */
 
     /* Чтобы картинка не сжалась и начиналась от верха  */
     object-fit: cover;
     object-position: top;
+
+    @media screen and (width >= 1100px) {
+      width: 765px;
+      height: 608px;
+    }
   }
 
   &__link {
@@ -78,5 +93,10 @@
       opacity: 0.5;
       transition: opacity 0.2s ease;
     }
+  }
+
+  @media screen and (width >= 1100px) {
+    min-height: 600px;
+    max-height: 756px;
   }
 }
